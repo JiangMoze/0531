@@ -1,5 +1,4 @@
 public class C{
-
 	public static void main(String [] args){
 		
 		int [] data={4,1,2,7,0,3};
@@ -9,8 +8,7 @@ public class C{
 			System.out.println(k);
 			
 		}
-	}
-	
+	}	
 	static void quickSort(int [] data,int start,int end){
 		int i=start;
 		int j=end;
