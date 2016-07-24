@@ -3,3 +3,20 @@
 作业：深浅克隆
 作业：对象数组排序
 作业：拷贝电影
+
+FileInputStream
+FileOuputStream
+FileReader
+FileWriter
+BufferedInputStream
+BufferedOutputStream
+BufferedReader
+BufferWriter
+InputStreamReader
+Scanner
+System.in
+RandromAccessFile:Object:兼具读和写功能，并且有seek
+ByteArrayInputStream ByteArrayOutputStrteam
+File
+作业：使用random合并
+作业：列出某个目录的所有文件，包括其子目录
