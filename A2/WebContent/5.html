@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form id="form1" name="form1" action="6.html" method="get">
+		用户名：<input type="text" name="username" id="username"/><br/>
+		密码：<input type="password" name="pwd" id="pwd"/><br/>
+		
+		男：<input type="radio" name="sex" id="sex" value="m"/>
+		女：<input type="radio" name="sex" id="sex" value="f"/><br/>		
+		你喜欢的明星：
+			王宝强<input type="checkbox" name="interest" value="wang"/>
+			杨紫<input type="checkbox" name="interest" value="yang"/>
+			马蓉<input type="checkbox" name="interest" value="ma"/>
+			<br/>
+		你所在的城市：
+			<select name="city" id="city">
+				<optgroup label="东北">
+					<option value="hrb">哈尔滨</option>
+					<option value="sh">绥化</option>
+					<option value="jx">鸡西</option>				
+				</optgroup>
+				<optgroup label="华北">
+					<option value="sjz">石家庄</option>
+					<option value="sd">济南</option>
+					<option value="wf">潍坊</option>
+				
+				</optgroup>
+			
+			</select>
+		   	
+			<br/>
+		留言
+		<textarea rows="5" cols="20" id="msg" name="msg">
+		
+		
+		</textarea>
+		<br/>
+		上传照片
+		<input type="file" id="pic" name="pic" ><br/>
+		<input type="hidden" value="admin" name="type">
+		<input type="submit" value="提交"/>
+		<input type="reset" value="重置"/>
+		<input type="button" value="按钮" onclick="alert('ok');">
+		<button onclick="alert('ok')">
+			按钮
+		
+		</button>
+		
+		<input type="image" src="2.jpg">
+		
+	</form>
+</body>
+</html>
