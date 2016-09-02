@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function ok1(i){
+		return i;
+		
+	}
+	alert(ok1(111));
+	alert(ok1("ABC"));
+	function ok(){
+		var a=[1,2,3,4,5];
+		for(var i=0;i<a.length;i++){
+			document.write(a[i]);
+			
+		}
+		document.write("</br>");
+		var i=0;
+		while(i<a.length){
+			document.write(a[i]);			
+			i++;
+		}
+		document.write("</br>");
+		i=0;
+		do{
+			document.write(a[i]);			
+			i++
+		}while(i<a.length);
+		document.write("</br>");
+		for(var j in a){
+			
+			document.write(a[j]);			
+		}
+		document.write("</br>");
+		var a1=[{name:"mike",age:10},{name:"rose",age:"20"}];
+		
+		for(var j in a1){
+			document.write(a1[j].name);
+		}
+		
+	}
+	ok();
+
+
+</script>
+</head>
+<body>	
+
+</body>
+</html>

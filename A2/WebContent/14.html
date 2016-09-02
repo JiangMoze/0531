@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" >
+	document.write(document.lastModified);
+	document.write(document.title);
+</script>
+</head>
+<body onunload="alert('unload')">
+	<form onsubmit="alert('submit')">
+	<input type="text" onfocus="alert('focus');" onblur="alert('blur');">
+	<br/>
+	<input type="text" onchange="alert('更改了');">
+	
+	<div >
+		<img alt="" src="1.gif" onmouseover="alert('over');" onmouseout="alert('out')">
+		<input type="button" onclick="alert('ok')">
+		<input type="submit" >		
+	</div>
+	</form>
+</body>
+</html>
