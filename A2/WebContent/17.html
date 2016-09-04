@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function over(){		
+		var tip=document.getElementById("tip");
+		tip.style.display='block';
+	}	
+	function out(){
+		var tip=document.getElementById("tip");
+		tip.style.display='none';
+	}
+</script>
+</head>
+<body>	
+	<a href="#" onmouseout="out()" onmouseover="over()">我的学生</a>	
+	<div style="display: none;" id="tip">
+	<div>
+		
+			<img alt="" src="1.gif">
+		
+		</div>
+		<div>
+		
+			<span>价格</span>
+			<span>80</span>
+		
+		</div>
+	
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function other(x,y,z){
+		x(y,z);
+		
+	}
+	var param=function(y,z){
+		alert(y+z);
+	}
+	other(param,10,12);
+	
+	other(function(y,z){
+		alert(y+z);
+		
+	},10,12);
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

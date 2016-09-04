@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" >
+
+	function test(){	
+		
+		//alert(document.getElementById("username").value);
+		alert(document.getElementById("pwd").value);
+	}
+	
+	
+	function test1(){	
+		
+		//alert(document.getElementsByName("username")[0].value);
+		alert(document.getElementsByName("password")[0].value);
+		alert(document.getElementsByName("password")[1].value);
+	}
+	
+	function test11(){	
+		
+		//alert(document.all.form1.username.value);
+		alert(document.all.form1.password[0].value);
+		alert(document.all.form1.password[1].value);
+	}
+	
+	function test2(){	
+		
+		var r=document.getElementsByName('type');
+		
+		for(var i=0;i<r.length;i++){
+			if(r[i].checked){
+				alert(r[i].value);
+			}
+			
+		}
+	}
+	function test3(){
+		
+		var s=document.getElementById('interest');
+		
+		for(var i=0;i<s.options.length;i++){
+			if(s.options[i].selected){
+				alert(s.options[i].value);
+				
+			}
+			
+		}
+		
+	}
+	
+	function test4(){
+		
+		var c=document.getElementsByName('city');
+		for(var i=0;i<c.length;i++){
+			if(c[i].checked){
+				alert(c[i].value);
+			}
+			
+		}
+		
+	}
+
+</script>
+</head>
+<body>
+	
+		<form name="form1" method="post" action="1.html" id="form1">
+			姓名：<input type="text" id="username" name="username" /><br/>
+			密码：<input type="password" name="password" id="pwd"/><br/>
+			密码：<input type="password" name="password"/><br/>
+			用户类型：<input type="radio"  name="type" value="1" id="type"/>管理员
+				   <input type="radio" name="type" value="2"  id="type"/>一般用户
+				   <br/>
+			你喜欢的城市:
+			<input type="checkbox" name="city" id="city" value="1">北京
+			<input type="checkbox" name="city" id="city" value="2">哈尔滨
+			<input type="checkbox" name="city" id="city" value="3">长春		
+    <br/>
+			爱好：
+			<select name="interest" id="interest">
+				<option value="999" >请选择你喜欢的球类</option><br/>
+				<option value="1" selected="selected">篮球</option>
+				<option value="2">足球</option>
+				<option value="3">排球球</option>
+			</select><br/>		
+		<input type="button" value="取得用户名的第一种方法" onclick="test()"/><br/>
+		<input type="button" value="取得用户名的第二种方法" onclick="test1()"/><br/>
+		<input type="button" value="取得用户名的第三种方法" onclick="test11()"/><br/>
+		<input type="button" value="取得权限的方法" onclick="test2()"/><br/>
+		<input type="button" value="取得兴趣的方法" onclick="test3()"/><br/>
+		<input type="button" value="取得城市的方法" onclick="test4()"/><br/>
+		
+		<input type="reset" value="重置"/><br/>
+		
+	</form>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+.warn{border:1px
+	solid red;color:red}
+#test{width:400px;margin:100px
+	auto;padding:3px}
+</style> 
+<script type="text/javascript">
+	function checkNumber(e){		
+		//1判断浏览器		
+		var a=window.event?e.keyCode:e.which;
+		//2.转成真实的键盘值
+		var s=String.fromCharCode(a);
+		
+		var reg=/\d/;
+		var flag= reg.test(s);
+		var test=document.getElementById("test");
+		if(!flag){
+			test.className="warn";
+			
+		}else{
+			test.className="";
+		}
+		
+		
+		return flag;
+		
+	}
+
+</script>
+</head>
+<body>
+	<div id="test" >
+	           请输入数字：
+	           <input type="text" 
+	    		onkeypress="return checkNumber(event);" 
+	    		
+	   			style="ime-mode:Disabled;" />
+	    <span id="msg">请正确输入数字</span>
+	    <input type="text" name="username"/>
+	    
+ 	 </div>
+</body>
+</html>

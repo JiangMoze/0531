@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function Animal(name,old){
+		
+		this.name=name;
+		this.old=old;
+		this.ok=function(){
+			
+			alert(this.name);
+		}
+	}
+	var a=new Animal("狗",10)
+	
+	a.ok();
+	Animal.prototype.sex="男";
+	Animal.prototype.error=function(){
+		
+		alert(this.old);
+	}
+	
+	a.error();
+	alert(a.sex);
+	
+
+	String.prototype.weikun=function(name){
+		
+		alert(name);
+	}
+	
+	var s="北京";
+	
+	s.weikun(s);
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

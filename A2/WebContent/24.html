@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+
+	function Animal(old,name){
+		this.old=old;//public int old
+		this.name=name;
+		var sex="fm";
+		this.eat=function(food){
+			
+			alert(this.name+food);
+		}
+		
+		
+	}
+	
+	var a=new Animal(10,"狗");
+	a.name="猫";
+
+	a.eat("骨头");
+	
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>
