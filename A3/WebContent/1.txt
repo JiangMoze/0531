@@ -1,0 +1,23 @@
+page :language import contentType pageEncoding
+taglib:
+include:file 
+
+useBean:实例化 id class 
+setProperty: value name property *
+getProperty:name property
+include:page
+param:name value :request.getParameter
+forward:转向，一次访问容器。
+plugin：applet
+params:
+fallback
+
+config,request,out,page,session,response,application,pageContext,exception
+
+page request(HttpServeltRequest)  session(HttpSession) application
+
+pageContext
+response
+exception
+page
+config
