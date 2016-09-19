@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function ok(){
+		
+		var uv= document.getElementById("username").value;
+		
+		var pv= document.getElementById("pwd").value;
+		if(uv=="" | pv==""){			
+			alert("用户名和密码不能为空！");
+			return;
+		}
+		
+		document.form1.submit();
+	}
+
+</script>
+</head>
+<body>
+	<h1>我们第一个JSP登录程序</h1>
+	
+	<form id="form1" name="form1" action="check.jsp" method="post">
+		用户名：
+		<input name="username" id="username" type="text"/><br/>
+		密码：
+		<input name="pwd" id="pwd" type="text"/><br/>
+		
+		<input type="button" value="登录" onclick="ok()"/>
+	</form>
+</body>
+</html>
